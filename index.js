@@ -1,9 +1,15 @@
+var Pname = prompt("enter your pet name");
+var type = prompt("What type of pet you have");
+var age = +prompt("What is age of your pet");
+var happiness = +prompt("How much your pet happiness level");
+var hunger = +prompt("How much your pet hunger level");
+var userInput = +prompt("What you want with your pet\n1-feed\n2-play\n3-age");
 var pet = {
-    name:"Mela",
-    type:"Dog",
-    age:15,
-    happiness:50,
-    hunger:30,
+    Pname: Pname,
+    type: type,
+    age: age,
+    happiness: happiness,
+    hunger: hunger,
     feed:function(){
         if(this.hunger <20){
             alert("Your pet's hunger level is " + this.hunger + ". They are not hungry!");
@@ -29,7 +35,7 @@ var pet = {
 
     }
 }
-var userInput = +prompt("What you want with your pet\n1-feed\n2-play\n3-age");
+
 if (userInput === 1){
     pet.feed();
 }else if(userInput === 2)
