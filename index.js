@@ -29,3 +29,15 @@ var pet = {
 
     }
 }
+var userInput = +prompt("What you want with your pet\n1-feed\n2-play\n3-age");
+if (userInput === 1){
+    pet.feed();
+}else if(userInput === 2)
+{
+    pet.play();
+}
+else if (userInput === 3) {
+    pet.agePet();
+} else {
+    alert("Invalid input. Please enter 1, 2, or 3.");
+}
