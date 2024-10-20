@@ -30,7 +30,7 @@ var pet = {
     agePet: function() {
         this.age += 1;
         this.happiness -= 5;
-        this.hunger += 10;
+        this.hunger = this.hunger;
         alert(`${this.Pname} is now ` + this.age + " years old! Happiness level is now " + this.happiness + " and hunger level is " + this.hunger);
     }
 };
