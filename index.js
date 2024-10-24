@@ -1,3 +1,7 @@
+var x = 1;
+while (x > 0) {
+
+
 var puppyName = prompt("Enter your pet name");
 var type = prompt("What type of pet do you have?");
 var age = +prompt("What is the age of your pet?");
@@ -42,3 +46,4 @@ if (userInput === 1) {
 } else if (userInput === 3) {
     pet.agePet();
 } 
+}
